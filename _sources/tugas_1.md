@@ -82,37 +82,37 @@ df.describe() #hanya berlaku untuk type data integer
 #### d. Prepocessing
 <p style="text-indent: 50px; text-align: justify;">Menghapus Outlier<p>
 ```{code-cell} python
-# Mengimpor pustaka pandas dengan alias 'pd'.
+Mengimpor pustaka pandas dengan alias 'pd'.
 import pandas as pd
 
-# Mengimpor kelas LocalOutlierFactor dari modul neighbors di pustaka Scikit-learn (sklearn).
+Mengimpor kelas LocalOutlierFactor dari modul neighbors di pustaka Scikit-learn (sklearn).
 from sklearn.neighbors import LocalOutlierFactor
 
-# Membaca dataset dari file CSV ("dataset.csv") ke dalam DataFrame X menggunakan Pandas.
+Membaca dataset dari file CSV ("dataset.csv") ke dalam DataFrame X menggunakan Pandas.
 X = pd.read_csv("https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/data_diabet.csv")
 
-# Membuat objek LocalOutlierFactor (LOF).
-# n_neighbors=5 menentukan jumlah tetangga yang akan digunakan dalam perhitungan LOF.
-# contamination=0.1 menentukan tingkat kontaminasi atau persentase outlier yang diharapkan dalam data.
+Membuat objek LocalOutlierFactor (LOF).
+n_neighbors=5 menentukan jumlah tetangga yang akan digunakan dalam perhitungan LOF.
+contamination=0.1 menentukan tingkat kontaminasi atau persentase outlier yang diharapkan dalam data.
 lof = LocalOutlierFactor(n_neighbors=5, contamination=0.1)
 
-# Menggunakan metode fit_predict() dari objek LOF untuk menentukan status outlier (outlier atau bukan) untuk setiap sampel dalam data.
-# Hasilnya akan berupa array yang berisi prediksi status outlier untuk setiap sampel.
+Menggunakan metode fit_predict() dari objek LOF untuk menentukan status outlier (outlier atau bukan) untuk setiap sampel dalam data.
+Hasilnya akan berupa array yang berisi prediksi status outlier untuk setiap sampel.
 y_pred = lof.fit_predict(X)
 
-# Cari indeks dari nilai -1 dalam array y_pred
+Cari indeks dari nilai -1 dalam array y_pred
 outlier_indices = [index for index, value in enumerate(y_pred) if value == -1]
 
-# Cetak indeks dari nilai -1 untuk mengetahui data ke berapa yang dianggap sebagai outlier
+Cetak indeks dari nilai -1 untuk mengetahui data ke berapa yang dianggap sebagai outlier
 print("Data outlier terdapat pada indeks:", outlier_indices)
 
-# Menghapus baris yang mengandung outlier dari DataFrame
+Menghapus baris yang mengandung outlier dari DataFrame
 X_cleaned = X.drop(outlier_indices)
 
-# Menyimpan DataFrame yang telah dibersihkan ke file CSV baru
+Menyimpan DataFrame yang telah dibersihkan ke file CSV baru
 X_cleaned.to_csv("dataset_tanpa_outlier.csv", index=False)
 
-# Menampilkan jumlah baris asli dan jumlah baris setelah outlier dihapus
+Menampilkan jumlah baris asli dan jumlah baris setelah outlier dihapus
 print("Jumlah baris asli:", len(X))
 print("Jumlah baris setelah outlier dihapus:", len(X_cleaned))
 print("Dataset tanpa outlier telah disimpan ke 'dataset_tanpa_outlier.csv'")
@@ -132,15 +132,15 @@ df = pd.read_csv(file_path)
 # Membagi data menjadi 80% untuk training dan 20% untuk testing
 train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
 
-# Menyimpan data training ke file CSV
+Menyimpan data training ke file CSV
 train_file_path = 'hd_training_80.csv'
 train_df.to_csv(train_file_path, index=False)
 
-# Menyimpan data testing ke file CSV
+Menyimpan data testing ke file CSV
 test_file_path = 'hd_testing_20.csv'
 test_df.to_csv(test_file_path, index=False)
 
-# Output hasil penyimpanan
+Output hasil penyimpanan
 print(f"Data training telah disimpan ke {train_file_path}")
 print(f"Data testing telah disimpan ke {test_file_path}")
 ```
@@ -168,48 +168,48 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
-# Membaca data dari file CSV
+Membaca data dari file CSV
 data = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv')
 
-# Memisahkan data menjadi fitur (X) dan target (y)
+Memisahkan data menjadi fitur (X) dan target (y)
 X = data.drop('class', axis=1)  # Jika targetnya disebut 'target'
 y = data['class']
 
-# Normalisasi data menggunakan MinMaxScaler
+Normalisasi data menggunakan MinMaxScaler
 scaler = MinMaxScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Menyimpan scaler ke file pickle
+Menyimpan scaler ke file pickle
 scaler_filename = "preprocessing.pickle"
 pickle.dump(scaler, open(scaler_filename, "wb"))
 
-# Membagi data menjadi data pelatihan dan data pengujian
+Membagi data menjadi data pelatihan dan data pengujian
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-# Menentukan kisaran nilai K yang ingin diuji
+Menentukan kisaran nilai K yang ingin diuji
 param_grid = {'n_neighbors': [1, 3, 5, 7, 9, 11, 13, 15]}
 
-# Inisialisasi model KNN
+Inisialisasi model KNN
 knn = KNeighborsClassifier()
 
-# Inisialisasi Grid Search Cross-Validation
+Inisialisasi Grid Search Cross-Validation
 grid_search = GridSearchCV(estimator=knn, param_grid=param_grid, cv=5)
 
-# Melatih model menggunakan Grid Search Cross-Validation
+Melatih model menggunakan Grid Search Cross-Validation
 grid_search.fit(X_train, y_train)
 
-# Menampilkan hasil Grid Search
+Menampilkan hasil Grid Search
 print("K optimal: ", grid_search.best_params_)
 
-# Menggunakan model terbaik untuk prediksi pada data uji
+Menggunakan model terbaik untuk prediksi pada data uji
 best_knn = grid_search.best_estimator_
 y_pred = best_knn.predict(X_test)
 
-# Menghitung dan menampilkan akurasi model
+Menghitung dan menampilkan akurasi model
 accuracy = accuracy_score(y_test, y_pred)
 print("Akurasi pada data uji: ", accuracy)
 
-# Menyimpan model yang sudah dilatih ke file pickle
+Menyimpan model yang sudah dilatih ke file pickle
 model_filename = "knn_model.pickle"
 pickle.dump(best_knn, open(model_filename, "wb"))
 ```
