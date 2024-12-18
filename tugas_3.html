@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Klasifikasi untuk Baju Thrifting &#8212; My sample book</title>
   
   
   
@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_3';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="tugas_2.html" />
+    <link rel="prev" title="Prediksi Harga Daging Ayam" href="tugas_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -167,8 +167,47 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="tugas_1.html">Prediksi Penyakit Diabetes</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tugas_2.html">Prediksi Harga Daging Ayam</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Klasifikasi untuk Baju Thrifting</a></li>
+
+
+
+
+
 </ul>
 
     </div>
@@ -346,7 +385,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Klasifikasi untuk Baju Thrifting</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -355,7 +394,24 @@
                 <h2> Contents </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Klasifikasi untuk Baju Thrifting</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-understanding">a. Data Understanding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-matriks-korelasi">Menampilkan matriks korelasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggambar-heatmap-untuk-visualisasi-korelasi">Menggambar heatmap untuk visualisasi korelasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-prepocessing">c. Prepocessing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-sliding-windows">Menyiapkan data untuk sliding windows</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-dataframe-untuk-hasil-sliding-windows">Membuat DataFrame untuk hasil sliding windows</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-sliding-windows">Menampilkan hasil sliding windows</a></li>
 </ul>
 
             </nav>
@@ -368,7 +424,179 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  
+  <section class="tex2jax_ignore mathjax_ignore" id="klasifikasi-untuk-baju-thrifting">
+<h1>Klasifikasi untuk Baju Thrifting<a class="headerlink" href="#klasifikasi-untuk-baju-thrifting" title="Link to this heading">#</a></h1>
+<section id="latar-belakang">
+<h2>Latar Belakang<a class="headerlink" href="#latar-belakang" title="Link to this heading">#</a></h2>
+<p style="text-indent: 50px; text-align: justify;">Di zaman sekarang ini fashion semakin hari semakin perkembang pesat. Terutama fashion anak kuliah atau lingkungan kampus, dengn begitu muncul baju thrif. Baju thrift merupakan pakaian atau barang bekas yang masih bagus dan layak diapaki dengan harga jual yang murah. Bahkan baju thrift masih ada yang baru dan masih berbandrol. Dengan begitu anak kuliah atau masyarakat bisa mengikuti trend atau mengikuti outfit pada zaman sekarang tanpa mahal-mahal membeli baju yang baru. baju thrift memiliki fisik yang masih bagus dan layak digunakan.Saya mengambil data ini dengan tujuan mengenalkan Perusahaan Fashion Campus pada E-Commerce di kalangan mahasiswa atau anak muda. Memberikan strategi pemasaran untuk penjualan pakaian bekas atau thrift. Mengembangkan strategis bisnis untuk mengenalkan dan mengembangkan model dan trend-trend thrift atau pakaian bekas di kalangan anak muda. Menganalisis data untuk menentukan faktor-faktor yang mempengaruhi prediksi perkembangan Fashion Campus.<p>
+</section>
+<section id="rumusan-masalah">
+<h2>Rumusan Masalah<a class="headerlink" href="#rumusan-masalah" title="Link to this heading">#</a></h2>
+<p style="text-indent: 50px; text-align: justify;">1. Bagaimana mengklasifikasikan barang atau baju thrift?
+2. Model apa saja yang digunakan?<p>
+</section>
+<section id="tujuan">
+<h2>Tujuan<a class="headerlink" href="#tujuan" title="Link to this heading">#</a></h2>
+<p style="text-indent: 50px; text-align: justify;">Pada pekerjaan kali ini, saya akan melakukan klasifikasi untuk baju thrifting setiap tahun. Tujuan pekerjaan ini adalah mengenalkan Perusahan Fashion Campus pada E-Commerce di kalangan mahasiswa atau anak muda di zaman sekarang ini. Dataset yang saya gunakan adalah dataset "Fashion Campus"<p>
+<section id="a-data-understanding">
+<h3>a. Data Understanding<a class="headerlink" href="#a-data-understanding" title="Link to this heading">#</a></h3>
+<p style="text-indent: 50px; text-align: justify;">Menampilkan Data<p>
+```{code-cell} python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+```
+```{code-cell} python
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/click_stream_new.csv')
+df.head()
+```
+```{code-cell} python
+import numpy as np  # Import library numpy
+import pandas as pd  # Import library pandas
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/click_stream_new.csv')  
+# Membaca file dataset.csv dan menyimpannya ke dalam DataFrame df
+df.shape  # Menampilkan bentuk (jumlah baris dan kolom) dari DataFrame df
+```
+```{code-cell} python
+data_df.plot()
+```
+#### b. EDA
+```{code-cell} python
+data_df.info()  # Menampilkan informasi umum mengenai DataFrame, termasuk jumlah entri, jumlah kolom, tipe data setiap kolom, dan apakah ada nilai kosong (non-null).
+print('Ukuran data ', data_df.shape)  # Menampilkan ukuran data dalam format tuple (jumlah baris, jumlah kolom).
+data_df.dtypes  # Menampilkan tipe data dari setiap kolom dalam DataFrame.
+```
+```{code-cell} python
+# Mencari Missing Value
+data_df.isnull().sum()
+```
+```{code-cell} python
+import seaborn as sns
+# Menghitung korelasi antar fitur untuk subset yang diinginkan
+features = data_df[['session_id', 'event_name', 'event_time', 'event_id', 'traffic_source', 'product_id','quantity','item_price','payment_status','search_keywords','promo_code','promo_amount']]
+correlation_matrix = features.corr()
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menampilkan-matriks-korelasi">
+<h1>Menampilkan matriks korelasi<a class="headerlink" href="#menampilkan-matriks-korelasi" title="Link to this heading">#</a></h1>
+<p>print(“Matriks Korelasi:”)
+print(correlation_matrix)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menggambar-heatmap-untuk-visualisasi-korelasi">
+<h1>Menggambar heatmap untuk visualisasi korelasi<a class="headerlink" href="#menggambar-heatmap-untuk-visualisasi-korelasi" title="Link to this heading">#</a></h1>
+<p>plt.figure(figsize=(10, 6))
+plt.title(“Heatmap Korelasi antar Fitur”)
+sns.heatmap(correlation_matrix, annot=True, cmap=’coolwarm’, fmt=”.2f”)
+plt.show()</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{code-cell} python
+# Deskripsi Statistik
+data_df.describe()
+</pre></div>
+</div>
+<section id="c-prepocessing">
+<h2>c. Prepocessing<a class="headerlink" href="#c-prepocessing" title="Link to this heading">#</a></h2>
+<p style="text-indent: 50px; text-align: justify;"> sliding windows<p>
+```{code-cell} python
+# Fungsi untuk membuat sliding windows
+def create_sliding_windows(data, window_size):
+    X, y = [], []
+    for i in range(len(data) - window_size):
+        X.append(data[i:i + window_size])
+        y.append(data[i + window_size])
+    return np.array(X), np.array(y)
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menyiapkan-data-untuk-sliding-windows">
+<h1>Menyiapkan data untuk sliding windows<a class="headerlink" href="#menyiapkan-data-untuk-sliding-windows" title="Link to this heading">#</a></h1>
+<p>window_size = 3  # Ukuran window
+data_values = data_df[[‘session_id’, ‘event_name’]].values  # Menggunakan kolom ‘Close’ dan ‘High’ untuk prediksi
+X, y = create_sliding_windows(data_values, window_size)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="membuat-dataframe-untuk-hasil-sliding-windows">
+<h1>Membuat DataFrame untuk hasil sliding windows<a class="headerlink" href="#membuat-dataframe-untuk-hasil-sliding-windows" title="Link to this heading">#</a></h1>
+<p>sliding_window_df = pd.DataFrame(X.reshape(X.shape[0], -1), columns=[f’session_id_t-{window_size-i}’ for i in range(window_size)] + [f’event_name_t-{window_size-i}’ for i in range(window_size)])
+sliding_window_df[‘Target_session_id_t’] = y[:, 0]  # Target Close
+sliding_window_df[‘Target_event_id_t’] = y[:, 1]  # Target High</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menampilkan-hasil-sliding-windows">
+<h1>Menampilkan hasil sliding windows<a class="headerlink" href="#menampilkan-hasil-sliding-windows" title="Link to this heading">#</a></h1>
+<p>print(sliding_window_df.head())</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>#### d. Normalisasi
+```{code-cell} python
+# Inisialisasi scaler untuk fitur (input) dan target (output)
+scaler_features = MinMaxScaler()
+scaler_target = MinMaxScaler()
+
+# Normalisasi fitur (Close_t-3, Close_t-2, Close_t-1, High_t-3, High_t-2, High_t-1)
+df_features_normalized = pd.DataFrame(
+    scaler_features.fit_transform(sliding_window_df.iloc[:, :-2]),  # Ambil semua kolom kecuali target
+    columns=sliding_window_df.columns[:-2],  # Nama kolom tanpa target
+    index=sliding_window_df.index
+)
+
+# Normalisasi target (Target_Close_t dan Target_High_t)
+df_target_normalized = pd.DataFrame(
+    scaler_target.fit_transform(sliding_window_df[[&#39;Target_Close_t&#39;, &#39;Target_High_t&#39;]]),
+    columns=[&#39;Target_Close_t&#39;, &#39;Target_High_t&#39;],
+    index=sliding_window_df.index
+)
+
+# Gabungkan kembali dataframe yang sudah dinormalisasi
+df_normalized = pd.concat([df_features_normalized, df_target_normalized], axis=1)
+
+# Menampilkan hasil normalisasi
+print(df_normalized.head())
+
+# Mengatur fitur (X) dan target (y)
+X = df_normalized[[&#39;Close_t-3&#39;, &#39;Close_t-2&#39;, &#39;Close_t-1&#39;, &#39;High_t-3&#39;, &#39;High_t-2&#39;, &#39;High_t-1&#39;]]
+y = df_normalized[[&#39;Target_Close_t&#39;, &#39;Target_High_t&#39;]]  # Target adalah harga yang dinormalisasi
+
+# Membagi data menjadi training dan testing (80% training, 20% testing)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=False)
+
+print(&#39;===== Data Train =====&#39;)
+print(X_train)
+
+print(&#39;===== Data Testing ====&#39;)
+print(X_test)
+
+# Mengambil nilai tanggal dari indeks X_train dan X_test
+dates_train = X_train.index
+dates_test = X_test.index
+
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
+
+# Plot data Close dan High dengan format tanggal di sumbu x
+plt.figure(figsize=(14, 7))
+
+# Plot Close
+plt.plot(data_df.index, data_df[&#39;Close&#39;], label=&#39;Close&#39;, linestyle=&#39;-&#39;, color=&#39;blue&#39;)
+
+# Plot High
+plt.plot(data_df.index, data_df[&#39;High&#39;], label=&#39;High&#39;, linestyle=&#39;--&#39;, color=&#39;orange&#39;)
+
+# Format sumbu x agar menampilkan tanggal
+plt.gca().xaxis.set_major_formatter(mdates.DateFormatter(&#39;%Y-%m-%d&#39;))
+plt.gca().xaxis.set_major_locator(mdates.MonthLocator())  # Menampilkan label tanggal per bulan
+
+plt.title(&#39;Close and High Prices Over Time&#39;)
+plt.xlabel(&#39;Date&#39;)
+plt.ylabel(&#39;Price&#39;)
+plt.legend(loc=&#39;upper left&#39;)
+plt.grid(True)
+plt.xticks(rotation=45)  # Putar label tanggal agar tidak tumpang tindih
+plt.tight_layout()
+plt.show()
+</pre></div>
+</div>
+</section>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -405,7 +633,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Prediksi Harga Daging Ayam</p>
       </div>
     </a>
 </div>
@@ -424,7 +652,24 @@
     <i class="fa-solid fa-list"></i> Contents
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Klasifikasi untuk Baju Thrifting</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-understanding">a. Data Understanding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-matriks-korelasi">Menampilkan matriks korelasi</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggambar-heatmap-untuk-visualisasi-korelasi">Menggambar heatmap untuk visualisasi korelasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-prepocessing">c. Prepocessing</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyiapkan-data-untuk-sliding-windows">Menyiapkan data untuk sliding windows</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-dataframe-untuk-hasil-sliding-windows">Membuat DataFrame untuk hasil sliding windows</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-sliding-windows">Menampilkan hasil sliding windows</a></li>
 </ul>
 
   </nav></div>

@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tugas_1';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="tugas_2.html" />
+    <link rel="next" title="Prediksi Harga Daging Ayam" href="tugas_2.html" />
     <link rel="prev" title="PROYEK SAINS DATA" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -170,6 +170,45 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Prediksi Penyakit Diabetes</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tugas_2.html">Prediksi Harga Daging Ayam</a></li>
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="tugas_3.html">Klasifikasi untuk Baju Thrifting</a></li>
+
+
+
+
+
 </ul>
 
     </div>
@@ -357,28 +396,45 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Prediksi Penyakit Diabetes</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-data">Sumber Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-preparation">a. Data Preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-data-wrangling">b. Data Wrangling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-exploratory-data-anaysis">c. Exploratory Data Anaysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-antar-fitur">Korelasi Antar Fitur</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">Seleksi Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-understanding-memahami-data">a. Data Understanding (Memahami Data)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-modelling">e. Modelling</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest">random forest</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengimpor-kelas-localoutlierfactor-dari-modul-neighbors-di-pustaka-scikit-learn-sklearn">Mengimpor kelas LocalOutlierFactor dari modul neighbors di pustaka Scikit-learn (sklearn).</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-dataset-dari-file-csv-dataset-csv-ke-dalam-dataframe-x-menggunakan-pandas">Membaca dataset dari file CSV (“dataset.csv”) ke dalam DataFrame X menggunakan Pandas.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-objek-localoutlierfactor-lof">Membuat objek LocalOutlierFactor (LOF).</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-neighbors-5-menentukan-jumlah-tetangga-yang-akan-digunakan-dalam-perhitungan-lof">n_neighbors=5 menentukan jumlah tetangga yang akan digunakan dalam perhitungan LOF.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contamination-0-1-menentukan-tingkat-kontaminasi-atau-persentase-outlier-yang-diharapkan-dalam-data">contamination=0.1 menentukan tingkat kontaminasi atau persentase outlier yang diharapkan dalam data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-metode-fit-predict-dari-objek-lof-untuk-menentukan-status-outlier-outlier-atau-bukan-untuk-setiap-sampel-dalam-data">Menggunakan metode fit_predict() dari objek LOF untuk menentukan status outlier (outlier atau bukan) untuk setiap sampel dalam data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasilnya-akan-berupa-array-yang-berisi-prediksi-status-outlier-untuk-setiap-sampel">Hasilnya akan berupa array yang berisi prediksi status outlier untuk setiap sampel.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-indeks-dari-nilai-1-dalam-array-y-pred">Cari indeks dari nilai -1 dalam array y_pred</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-indeks-dari-nilai-1-untuk-mengetahui-data-ke-berapa-yang-dianggap-sebagai-outlier">Cetak indeks dari nilai -1 untuk mengetahui data ke berapa yang dianggap sebagai outlier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-baris-yang-mengandung-outlier-dari-dataframe">Menghapus baris yang mengandung outlier dari DataFrame</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-dataframe-yang-telah-dibersihkan-ke-file-csv-baru">Menyimpan DataFrame yang telah dibersihkan ke file CSV baru</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-jumlah-baris-asli-dan-jumlah-baris-setelah-outlier-dihapus">Menampilkan jumlah baris asli dan jumlah baris setelah outlier dihapus</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan">Pemodelan</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-feature-important">f. Feature Important</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g-testing-data-baru">g. Testing Data Baru</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-dari-file-csv">Membaca data dari file CSV</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-data-menjadi-fitur-x-dan-target-y">Memisahkan data menjadi fitur (X) dan target (y)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-menggunakan-minmaxscaler">Normalisasi data menggunakan MinMaxScaler</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-scaler-ke-file-pickle">Menyimpan scaler ke file pickle</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-menjadi-data-pelatihan-dan-data-pengujian">Membagi data menjadi data pelatihan dan data pengujian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-kisaran-nilai-k-yang-ingin-diuji">Menentukan kisaran nilai K yang ingin diuji</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inisialisasi-model-knn">Inisialisasi model KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inisialisasi-grid-search-cross-validation">Inisialisasi Grid Search Cross-Validation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#melatih-model-menggunakan-grid-search-cross-validation">Melatih model menggunakan Grid Search Cross-Validation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-grid-search">Menampilkan hasil Grid Search</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-model-terbaik-untuk-prediksi-pada-data-uji">Menggunakan model terbaik untuk prediksi pada data uji</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-dan-menampilkan-akurasi-model">Menghitung dan menampilkan akurasi model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-model-yang-sudah-dilatih-ke-file-pickle">Menyimpan model yang sudah dilatih ke file pickle</a></li>
 </ul>
+
             </nav>
         </div>
     </div>
@@ -393,401 +449,271 @@
 <h1>Prediksi Penyakit Diabetes<a class="headerlink" href="#prediksi-penyakit-diabetes" title="Link to this heading">#</a></h1>
 <section id="latar-belakang">
 <h2>Latar Belakang<a class="headerlink" href="#latar-belakang" title="Link to this heading">#</a></h2>
-<p style="text-indent: 50px; text-align: justify;">Diabetes merupakan salah satu penyakit kronis yang terus berkembang dan dapat menyebabkan berbagai komplikasi serius jika tidak terdeteksi sejak dini. Dengan semakin meningkatnya jumlah penderita diabetes, prediksi risiko menjadi langkah krusial untuk mencegah perkembangan penyakit dan mengurangi beban biaya perawatan kesehatan jangka panjang. Pendekatan berbasis prediksi menggunakan faktor gaya hidup dan data klinis memungkinkan klinik kesehatan untuk memproyeksikan kemungkinan seorang pasien mengembangkan diabetes di masa depan. Dengan begitu, tindakan preventif dan intervensi medis yang lebih tepat dapat direncanakan. Sistem prediksi ini juga dapat meningkatkan efisiensi dalam pemanfaatan sumber daya klinik dan mempercepat pelayanan kesehatan preventif.</p>
+<p style="text-indent: 50px; text-align: justify;">Pada pekerjaan kali ini, saya akan melakukan klasifikasi untuk prediksi penyakit diabetes. Tujuan dari pekerjaan ini adalah untuk membantu dalam memprediksi adanya peyakit diabetes tahap awal pada individu berdasarkan berbagai fitur yang tersedia. Dataset yang kami gunakan adalah dataset "Early Stage Diabetes Risk Prediction" yang kami ambil dari UCI Machine Learning Respository . Dataset ini berasal dari Rumah Sakit di Sylhet, Bangladesh dan disetujui oleh dokter.
+Langkah pertama yang dilakukan adalah mengumpulkan data. Data tersebut berada di aiven.com, sehingga data perlu ditarik dari sumber tersebut. Dataset ini terdiri dari** 520 baris dan **16 fitur, yaitu Age, Sex, Polyuria, Polydipsia, Sudden weight loss, Weakness, Polyphagia, Genital thrush, Visual blurring, Itching, Irritability, Delayed healing, Partial paresis, Muscle, Alopecia, Obseit, Class.
+Terdapat 2 type data dalam dataset ini, yakni catagorial dan integer :
+Tipe data categorical, juga dikenal sebagai tipe data katagorikal, merujuk pada variabe yang menggambarkan kategori atau kelompok yang berbeda
+Tipe data integer merujuk pada nilai-nilai yang terdiri dari angka.<p>
 </section>
 <section id="rumusan-masalah">
 <h2>Rumusan Masalah<a class="headerlink" href="#rumusan-masalah" title="Link to this heading">#</a></h2>
-<p style="text-indent: 50px; text-align: justify;">1. Bagaimana cara membuat sistem yang dapat memprediksi risiko diabetes dengan akurat?  
-2. Bagaimana hasil prediksi bisa membantu layanan kesehatan mencegah diabetes lebih efektif?  
-3. Apa faktor yang paling mempengaruhi penyakit diabetes?</p>
+<p style="text-indent: 50px; text-align: justify;">Berdasarkan latar belakang diatas, maka rumusan masalahnya adalah sebagai berikut : 
+Bagaimana mengidentifikasi faktor risiko utama yang mempengaruhi perkembangan diabetes pada tahap awal?
+Bagaimana membangun model prediksi yang akurat untuk mendeteksi risiko diabetes pada tahap awal?<p>
 </section>
 <section id="tujuan">
 <h2>Tujuan<a class="headerlink" href="#tujuan" title="Link to this heading">#</a></h2>
-<p style="text-indent: 50px; text-align: justify;"> 
-1. Membuat sistem yang bisa memprediksi risiko diabetes dengan data kesehatan dan gaya hidup.  
-2. Membantu layanan kesehatan dalam memberikan tindakan pencegahan lebih cepat dan tepat.  
-3. Mengetahui faktor apa yang paling mempengaruhi diabetes.
-</p>
-</section>
-<section id="sumber-data">
-<h2>Sumber Data<a class="headerlink" href="#sumber-data" title="Link to this heading">#</a></h2>
-<p style="text-indent: 50px; text-align: justify;">Dataset ini berasal dari Kaggle dan berisi informasi mengenai data diabetes dengan berbagai fitur yang relevan untuk analisis kesehatan. Data ini akan digunakan untuk membangun model prediksi risiko diabetes berdasarkan kolom-kolom yang tersedia.Dataset yang digunakan ini berasal dari file Excel dengan informasi berikut:
-gender: Tipe object (menunjukkan jenis kelamin responden: pria atau wanita).
-age: Tipe int (usia responden dalam tahun).
-hypertension: Tipe int (indikator apakah responden memiliki hipertensi: 0 untuk tidak, 1 untuk ya).
-heart_disease: Tipe int (indikator apakah responden memiliki penyakit jantung: 0 untuk tidak, 1 untuk ya).
-smoking_history: Tipe object (informasi mengenai riwayat merokok responden: 'never', 'current', 'former', atau 'not current').
-bmi: Tipe float64 (Indeks Massa Tubuh dalam kg/m²).
-HbA1c_level: Tipe float64 (level HbA1c dalam persen, indikator kontrol gula darah).
-blood_glucose_level: Tipe float64 (level glukosa darah dalam mg/dL).
-diabetes: Tipe int (indikator apakah responden menderita diabetes: 0 untuk tidak, 1 untuk ya).
-Data ini memberikan gambaran komprehensif mengenai faktor-faktor yang dapat mempengaruhi risiko diabetes pada individu.</p>
-<section id="a-data-preparation">
-<h3>a. Data Preparation<a class="headerlink" href="#a-data-preparation" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data Processing</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Modelling</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span><span class="p">,</span> <span class="n">mean_squared_error</span><span class="p">,</span> <span class="n">r2_score</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">RandomizedSearchCV</span><span class="p">,</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">randint</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
-
-<span class="c1"># Visualization</span>
-<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">plot_tree</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Data Processing</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Modelling</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="b-data-wrangling">
-<h3>b. Data Wrangling<a class="headerlink" href="#b-data-wrangling" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/mellychandrawardani/mellychandrawardani/main/data_diabetes.xlsx&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">data_df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p style="text-indent: 50px; text-align: justify;"> 
-Dataset ini memiliki:
-Jumlah Atribut/Feature: 9 (berisi informasi demografis dan kesehatan).
-Jumlah Data: 499 (entri responden).
-Jumlah Label: 1 (status diabetes).
-Jumlah Kelas: 2 (0: tidak diabetes, 1: diabetes).</p>
-</section>
-<section id="c-exploratory-data-anaysis">
-<h3>c. Exploratory Data Anaysis<a class="headerlink" href="#c-exploratory-data-anaysis" title="Link to this heading">#</a></h3>
-<p>cek tipe dataset, cek missing value, cek duplikat data</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mengecek tipe dataset</span>
-<span class="n">data_df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-<span class="c1"># Mengecek jumlah missing value di setiap kolom</span>
-<span class="n">missing_values</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-<span class="c1"># Menampilkan hasil</span>
-<span class="p">(</span><span class="s2">&quot;Jumlah missing value per kolom:&quot;</span><span class="p">)</span>
-<span class="p">(</span><span class="n">missing_values</span><span class="p">)</span>
-<span class="c1"># Menampilkan persentase missing value</span>
-<span class="n">total_rows</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data_df</span><span class="p">)</span>
-<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">missing_values</span> <span class="o">/</span> <span class="n">total_rows</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
-
-<span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Persentase missing value per kolom:&quot;</span><span class="p">)</span>
-<span class="p">(</span><span class="n">missing_percentage</span><span class="p">)</span>
-<span class="c1">#duplikat data</span>
-<span class="n">data_df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p style="text-indent: 50px; text-align: justify;">Hasil analisis missing value dalam dataset menunjukkan bahwa:
-Jumlah Missing Value per Kolom: Semua kolom memiliki 0 missing value, artinya tidak ada data yang hilang dalam setiap atribut.
-Persentase Missing Value per Kolom: Semua kolom juga menunjukkan persentase 0.0%, yang berarti tidak ada nilai yang hilang dari keseluruhan dataset. Dengan tidak adanya missing value, analisis dan pemodelan dapat dilakukan tanpa harus menangani data yang hilang, sehingga meningkatkan kualitas dan akurasi hasil analisis.</p>
-</section>
-<section id="d-preprocessing-data">
-<h3>d. Preprocessing Data<a class="headerlink" href="#d-preprocessing-data" title="Link to this heading">#</a></h3>
-<p style="text-indent: 50px; text-align: justify;">label encoding : Encoding digunakan untuk mengubah data kategorikal menjadi format numerik, sehingga dapat digunakan dalam analisis dan algoritma pembelajaran mesin.</p><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># label encoder</span>
-<span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
-<span class="n">le_copy</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
-<span class="n">le_copy_encode</span> <span class="o">=</span> <span class="n">le_copy</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Atribut diabetes </span><span class="se">\n</span><span class="si">{</span><span class="n">le_copy</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Atribut diabetes Encode </span><span class="se">\n</span><span class="si">{</span><span class="n">le_copy_encode</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-<span class="n">data_df</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="korelasi-antar-fitur">
-<h4>Korelasi Antar Fitur<a class="headerlink" href="#korelasi-antar-fitur" title="Link to this heading">#</a></h4>
-<p style="text-indent: 50px; text-align: justify;"> Korelasi antar fitur digunakan untuk memahami hubungan antara variabel dalam dataset. Hasilnya: "HbA1c_level" dan "blood_glucose_level" menunjukkan korelasi positif yang signifikan. "blood_glucose_level" berkorelasi dengan target "diabetes", mendukung fakta bahwa peningkatan kadar gula darah berkaitan erat dengan risiko diabetes. Fitur-fitur lain seperti "gender" atau "smoking_history" tampaknya tidak berpengaruh besar terhadap fitur lain dalam dataset ini.</p><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corr_data_df</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">corr</span> <span class="o">=</span> <span class="n">corr_data_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
-<span class="n">cax</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">matshow</span><span class="p">(</span><span class="n">corr</span><span class="p">,</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">cax</span><span class="p">)</span>
-<span class="n">ticks</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">corr_data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">ticks</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(</span><span class="n">ticks</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">corr_data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_yticklabels</span><span class="p">(</span><span class="n">corr_data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="seleksi-fitur">
-<h4>Seleksi Fitur<a class="headerlink" href="#seleksi-fitur" title="Link to this heading">#</a></h4>
-<p style="text-indent: 50px; text-align: justify;">Seleksi fitur adalah proses memilih subset fitur yang paling relevan dari dataset untuk digunakan dalam model pembelajaran mesin. Hasil seleksi ini menunjukkan bahwa fitur-fitur yang dipilih memiliki keterkaitan yang lebih signifikan terhadap prediksi diabetes, yaitu: Kadar glukosa darah (blood_glucose_level) dan HbA1c_level sebagai indikator langsung. Faktor risiko klinis, seperti BMI dan heart_disease. Faktor demografis, seperti age dan gender.
-Gaya hidup, seperti smoking_history.</p><div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">main_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data_df</span><span class="p">[</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]],</span> <span class="n">data_df</span><span class="p">[</span><span class="n">data_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">3</span><span class="p">:]]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">features_df</span> <span class="o">=</span> <span class="n">main_df</span><span class="p">[</span><span class="n">main_df</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
-<span class="n">labels_df</span> <span class="o">=</span> <span class="n">main_df</span><span class="p">[</span><span class="s2">&quot;diabetes&quot;</span><span class="p">]</span>
-<span class="n">main_df</span>
-</pre></div>
-</div>
-</div>
-</div>
+<p style="text-indent: 50px; text-align: justify;">Tujuan dari pekerjaan ini adalah untuk membantu dalam memprediksi adanya peyakit diabetes tahap awal pada individu berdasarkan berbagai fitur yang tersedia. Dataset yang kami gunakan adalah dataset "Early Stage Diabetes Risk Prediction" yang kami ambil dari UCI Machine Learning Respository . Dataset ini berasal dari Rumah Sakit di Sylhet, Bangladesh dan disetujui oleh dokter.<p>
+<section id="a-data-understanding-memahami-data">
+<h3>a. Data Understanding (Memahami Data)<a class="headerlink" href="#a-data-understanding-memahami-data" title="Link to this heading">#</a></h3>
+<p style="text-indent: 50px; text-align: justify;"> Menampilkan Data <p>
+```{code-cell} python
+# Import library yang dibutuhkan
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import warnings
+warnings.filterwarnings('ignore')
+```
+```{code-cell} python
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/diabetes_data_upload.csv')
+df.head()
+```
+```{code-cell} python
+import numpy as np  # Import library numpy
+import pandas as pd  # Import library pandas
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/diabetes_data_upload.csv')  # Membaca file dataset.csv dan menyimpannya ke dalam DataFrame df
+df.shape  # Menampilkan bentuk (jumlah baris dan kolom) dari DataFrame df
+```
+#### Menentukan Missing Value
+```{code-cell} python
+import numpy as np
+import pandas as pd
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/diabetes_data_upload.csv')
+df.isnull().sum()
+```
+```{code-cell} python
+df.info()
+print("Shape of data:")
+print(df.shape)
+```
+```{code-cell} python
+print("Jumlah data duplicated:", df.duplicated().sum(), end="")
+df.isna().sum()
+```
+#### Mengekplorasi Data(Numerik)
+```{code-cell}
+import numpy as np  # Import library numpy
+import pandas as pd  # Import library pandas
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/integer.csv')  # Membaca file dataset.csv
+df.describe() #hanya berlaku untuk type data integer
+```
+#### d. Prepocessing
+<p style="text-indent: 50px; text-align: justify;">Menghapus Outlier<p>
+```{code-cell} python
+# Mengimpor pustaka pandas dengan alias 'pd'.
+import pandas as pd
 </section>
 </section>
 </section>
-<section id="e-modelling">
-<h2>e. Modelling<a class="headerlink" href="#e-modelling" title="Link to this heading">#</a></h2>
-<section id="random-forest">
-<h3>random forest<a class="headerlink" href="#random-forest" title="Link to this heading">#</a></h3>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">train_features</span><span class="p">,</span> <span class="n">test_features</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">test_labels</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features_df</span><span class="p">,</span> <span class="n">labels_df</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.25</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<section class="tex2jax_ignore mathjax_ignore" id="mengimpor-kelas-localoutlierfactor-dari-modul-neighbors-di-pustaka-scikit-learn-sklearn">
+<h1>Mengimpor kelas LocalOutlierFactor dari modul neighbors di pustaka Scikit-learn (sklearn).<a class="headerlink" href="#mengimpor-kelas-localoutlierfactor-dari-modul-neighbors-di-pustaka-scikit-learn-sklearn" title="Link to this heading">#</a></h1>
+<p>from sklearn.neighbors import LocalOutlierFactor</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="membaca-dataset-dari-file-csv-dataset-csv-ke-dalam-dataframe-x-menggunakan-pandas">
+<h1>Membaca dataset dari file CSV (“dataset.csv”) ke dalam DataFrame X menggunakan Pandas.<a class="headerlink" href="#membaca-dataset-dari-file-csv-dataset-csv-ke-dalam-dataframe-x-menggunakan-pandas" title="Link to this heading">#</a></h1>
+<p>X = pd.read_csv(”<a class="reference external" href="https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/data_diabet.csv">https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/data_diabet.csv</a>”)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="membuat-objek-localoutlierfactor-lof">
+<h1>Membuat objek LocalOutlierFactor (LOF).<a class="headerlink" href="#membuat-objek-localoutlierfactor-lof" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="n-neighbors-5-menentukan-jumlah-tetangga-yang-akan-digunakan-dalam-perhitungan-lof">
+<h1>n_neighbors=5 menentukan jumlah tetangga yang akan digunakan dalam perhitungan LOF.<a class="headerlink" href="#n-neighbors-5-menentukan-jumlah-tetangga-yang-akan-digunakan-dalam-perhitungan-lof" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contamination-0-1-menentukan-tingkat-kontaminasi-atau-persentase-outlier-yang-diharapkan-dalam-data">
+<h1>contamination=0.1 menentukan tingkat kontaminasi atau persentase outlier yang diharapkan dalam data.<a class="headerlink" href="#contamination-0-1-menentukan-tingkat-kontaminasi-atau-persentase-outlier-yang-diharapkan-dalam-data" title="Link to this heading">#</a></h1>
+<p>lof = LocalOutlierFactor(n_neighbors=5, contamination=0.1)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menggunakan-metode-fit-predict-dari-objek-lof-untuk-menentukan-status-outlier-outlier-atau-bukan-untuk-setiap-sampel-dalam-data">
+<h1>Menggunakan metode fit_predict() dari objek LOF untuk menentukan status outlier (outlier atau bukan) untuk setiap sampel dalam data.<a class="headerlink" href="#menggunakan-metode-fit-predict-dari-objek-lof-untuk-menentukan-status-outlier-outlier-atau-bukan-untuk-setiap-sampel-dalam-data" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="hasilnya-akan-berupa-array-yang-berisi-prediksi-status-outlier-untuk-setiap-sampel">
+<h1>Hasilnya akan berupa array yang berisi prediksi status outlier untuk setiap sampel.<a class="headerlink" href="#hasilnya-akan-berupa-array-yang-berisi-prediksi-status-outlier-untuk-setiap-sampel" title="Link to this heading">#</a></h1>
+<p>y_pred = lof.fit_predict(X)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cari-indeks-dari-nilai-1-dalam-array-y-pred">
+<h1>Cari indeks dari nilai -1 dalam array y_pred<a class="headerlink" href="#cari-indeks-dari-nilai-1-dalam-array-y-pred" title="Link to this heading">#</a></h1>
+<p>outlier_indices = [index for index, value in enumerate(y_pred) if value == -1]</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="cetak-indeks-dari-nilai-1-untuk-mengetahui-data-ke-berapa-yang-dianggap-sebagai-outlier">
+<h1>Cetak indeks dari nilai -1 untuk mengetahui data ke berapa yang dianggap sebagai outlier<a class="headerlink" href="#cetak-indeks-dari-nilai-1-untuk-mengetahui-data-ke-berapa-yang-dianggap-sebagai-outlier" title="Link to this heading">#</a></h1>
+<p>print(“Data outlier terdapat pada indeks:”, outlier_indices)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menghapus-baris-yang-mengandung-outlier-dari-dataframe">
+<h1>Menghapus baris yang mengandung outlier dari DataFrame<a class="headerlink" href="#menghapus-baris-yang-mengandung-outlier-dari-dataframe" title="Link to this heading">#</a></h1>
+<p>X_cleaned = X.drop(outlier_indices)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menyimpan-dataframe-yang-telah-dibersihkan-ke-file-csv-baru">
+<h1>Menyimpan DataFrame yang telah dibersihkan ke file CSV baru<a class="headerlink" href="#menyimpan-dataframe-yang-telah-dibersihkan-ke-file-csv-baru" title="Link to this heading">#</a></h1>
+<p>X_cleaned.to_csv(“dataset_tanpa_outlier.csv”, index=False)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menampilkan-jumlah-baris-asli-dan-jumlah-baris-setelah-outlier-dihapus">
+<h1>Menampilkan jumlah baris asli dan jumlah baris setelah outlier dihapus<a class="headerlink" href="#menampilkan-jumlah-baris-asli-dan-jumlah-baris-setelah-outlier-dihapus" title="Link to this heading">#</a></h1>
+<p>print(“Jumlah baris asli:”, len(X))
+print(“Jumlah baris setelah outlier dihapus:”, len(X_cleaned))
+print(“Dataset tanpa outlier telah disimpan ke ‘dataset_tanpa_outlier.csv’”)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+&lt;p style=&quot;text-indent: 50px; text-align: justify;&quot;&gt; Menyimpan Data Training dan Data Testing &lt;p&gt;
+```{code-cell}python
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+# URL raw untuk file CSV
+file_path = &#39;https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv&#39;
+
+# Membaca data dari file CSV
+df = pd.read_csv(file_path)
+
+# Membagi data menjadi 80% untuk training dan 20% untuk testing
+train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
+
+# Menyimpan data training ke file CSV
+train_file_path = &#39;hd_training_80.csv&#39;
+train_df.to_csv(train_file_path, index=False)
+
+# Menyimpan data testing ke file CSV
+test_file_path = &#39;hd_testing_20.csv&#39;
+test_df.to_csv(test_file_path, index=False)
+
+# Output hasil penyimpanan
+print(f&quot;Data training telah disimpan ke {train_file_path}&quot;)
+print(f&quot;Data testing telah disimpan ke {test_file_path}&quot;)
 </pre></div>
 </div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">()</span>
-<span class="c1"># Train the model on training data</span>
-<span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_features</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create predict for model</span>
-<span class="n">predictions</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_features</span><span class="p">)</span>
-
-<span class="c1"># Calculate performance metrics for regression</span>
-<span class="n">mse</span> <span class="o">=</span> <span class="n">mean_squared_error</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-<span class="n">rmse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">mse</span><span class="p">)</span>  <span class="c1"># Root Mean Squared Error</span>
-<span class="n">r2</span> <span class="o">=</span> <span class="n">r2_score</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Mean Squared Error:&#39;</span><span class="p">,</span> <span class="n">mse</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Root Mean Squared Error:&#39;</span><span class="p">,</span> <span class="n">rmse</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;R-squared:&#39;</span><span class="p">,</span> <span class="n">r2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate accuracy precision and recall</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-<span class="n">precision</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-<span class="n">recall</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy:&quot;</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Precision:&quot;</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Recall:&quot;</span><span class="p">,</span> <span class="n">recall</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the confusion matrix</span>
-<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">test_labels</span><span class="p">,</span> <span class="n">predictions</span><span class="p">)</span>
-
-<span class="n">ConfusionMatrixDisplay</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="o">=</span><span class="n">cm</span><span class="p">)</span><span class="o">.</span><span class="n">plot</span><span class="p">();</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># rf = RandomForestClassifier()</span>
-<span class="c1"># rf.fit(train_features, train_labels)  # Fit the model</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-  <span class="c1"># Pick one tree from the forest, e.g., the first tree (index 0)</span>
-  <span class="n">tree_to_plot</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">estimators_</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-
-  <span class="n">name_class</span> <span class="o">=</span> <span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">tree_to_plot</span><span class="o">.</span><span class="n">classes_</span><span class="p">]</span>
-
-  <span class="c1"># Plot the decision tree</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
-  <span class="n">plot_tree</span><span class="p">(</span><span class="n">tree_to_plot</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="n">features_df</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span> <span class="n">class_names</span><span class="o">=</span><span class="n">name_class</span><span class="p">,</span> <span class="n">filled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Decision Tree from Random Forest&quot;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p style="text-indent: 50px; text-align: justify;">Model Random Forest menunjukkan performa yang baik:
-Akurasi: 88%
-Precision: 92.3%
-Recall: 81.8%
-R-squared score sebesar 78.2% menunjukkan bahwa model mampu menjelaskan sebagian besar variasi dalam data.
-RMSE rendah (0.315) menunjukkan bahwa tingkat kesalahan prediksi cukup kecil. </p>
+<section id="pemodelan">
+<h2>Pemodelan<a class="headerlink" href="#pemodelan" title="Link to this heading">#</a></h2>
+<p style="text-indent: 50px; text-align: justify;">Prediksi Penyakit jantung Menggunakan Klasifikasi K-Nearest Neighbor (KNN)<p>
+```{code-cell} python
+import numpy as np  # Import library numpy
+import pandas as pd  # Import library pandas
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv')  # Membaca file dataset.csv dan menyimpannya ke dalam DataFrame df
+df.shape  # Menampilkan bentuk (jumlah baris dan kolom) dari DataFrame df
+```
+```{code-cell} python
+import numpy as np  # Import library numpy
+import pandas as pd  # Import library pandas
+df = pd.read_csv('https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv')  # Membaca file dataset.csv dan menyimpannya ke dalam DataFrame df
+df.shape  # Menampilkan bentuk (jumlah baris dan kolom) dari DataFrame df
+```
+<p style="text-indent: 50px; text-align: justify;">Menentukan nilai K<p>
+```{code-cell} python
+# Import library yang dibutuhkan
+import pandas as pd
+import pickle
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
 </section>
 </section>
-<section id="f-feature-important">
-<h2>f. Feature Important<a class="headerlink" href="#f-feature-important" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Membagi data menjadi fitur dan label</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;diabetes&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;diabetes&#39;</span><span class="p">]</span>
+<section class="tex2jax_ignore mathjax_ignore" id="membaca-data-dari-file-csv">
+<h1>Membaca data dari file CSV<a class="headerlink" href="#membaca-data-dari-file-csv" title="Link to this heading">#</a></h1>
+<p>data = pd.read_csv(’<a class="reference external" href="https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv">https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv</a>’)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="memisahkan-data-menjadi-fitur-x-dan-target-y">
+<h1>Memisahkan data menjadi fitur (X) dan target (y)<a class="headerlink" href="#memisahkan-data-menjadi-fitur-x-dan-target-y" title="Link to this heading">#</a></h1>
+<p>X = data.drop(‘class’, axis=1)  # Jika targetnya disebut ‘target’
+y = data[‘class’]</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="normalisasi-data-menggunakan-minmaxscaler">
+<h1>Normalisasi data menggunakan MinMaxScaler<a class="headerlink" href="#normalisasi-data-menggunakan-minmaxscaler" title="Link to this heading">#</a></h1>
+<p>scaler = MinMaxScaler()
+X_scaled = scaler.fit_transform(X)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menyimpan-scaler-ke-file-pickle">
+<h1>Menyimpan scaler ke file pickle<a class="headerlink" href="#menyimpan-scaler-ke-file-pickle" title="Link to this heading">#</a></h1>
+<p>scaler_filename = “preprocessing.pickle”
+pickle.dump(scaler, open(scaler_filename, “wb”))</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="membagi-data-menjadi-data-pelatihan-dan-data-pengujian">
+<h1>Membagi data menjadi data pelatihan dan data pengujian<a class="headerlink" href="#membagi-data-menjadi-data-pelatihan-dan-data-pengujian" title="Link to this heading">#</a></h1>
+<p>X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menentukan-kisaran-nilai-k-yang-ingin-diuji">
+<h1>Menentukan kisaran nilai K yang ingin diuji<a class="headerlink" href="#menentukan-kisaran-nilai-k-yang-ingin-diuji" title="Link to this heading">#</a></h1>
+<p>param_grid = {‘n_neighbors’: [1, 3, 5, 7, 9, 11, 13, 15]}</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inisialisasi-model-knn">
+<h1>Inisialisasi model KNN<a class="headerlink" href="#inisialisasi-model-knn" title="Link to this heading">#</a></h1>
+<p>knn = KNeighborsClassifier()</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="inisialisasi-grid-search-cross-validation">
+<h1>Inisialisasi Grid Search Cross-Validation<a class="headerlink" href="#inisialisasi-grid-search-cross-validation" title="Link to this heading">#</a></h1>
+<p>grid_search = GridSearchCV(estimator=knn, param_grid=param_grid, cv=5)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="melatih-model-menggunakan-grid-search-cross-validation">
+<h1>Melatih model menggunakan Grid Search Cross-Validation<a class="headerlink" href="#melatih-model-menggunakan-grid-search-cross-validation" title="Link to this heading">#</a></h1>
+<p>grid_search.fit(X_train, y_train)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menampilkan-hasil-grid-search">
+<h1>Menampilkan hasil Grid Search<a class="headerlink" href="#menampilkan-hasil-grid-search" title="Link to this heading">#</a></h1>
+<p>print(“K optimal: “, grid_search.best_params_)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menggunakan-model-terbaik-untuk-prediksi-pada-data-uji">
+<h1>Menggunakan model terbaik untuk prediksi pada data uji<a class="headerlink" href="#menggunakan-model-terbaik-untuk-prediksi-pada-data-uji" title="Link to this heading">#</a></h1>
+<p>best_knn = grid_search.best_estimator_
+y_pred = best_knn.predict(X_test)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menghitung-dan-menampilkan-akurasi-model">
+<h1>Menghitung dan menampilkan akurasi model<a class="headerlink" href="#menghitung-dan-menampilkan-akurasi-model" title="Link to this heading">#</a></h1>
+<p>accuracy = accuracy_score(y_test, y_pred)
+print(“Akurasi pada data uji: “, accuracy)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="menyimpan-model-yang-sudah-dilatih-ke-file-pickle">
+<h1>Menyimpan model yang sudah dilatih ke file pickle<a class="headerlink" href="#menyimpan-model-yang-sudah-dilatih-ke-file-pickle" title="Link to this heading">#</a></h1>
+<p>model_filename = “knn_model.pickle”
+pickle.dump(best_knn, open(model_filename, “wb”))</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;p style=&quot;text-indent: 50px; text-align: justify;&quot;&gt;Menghitung KNN&lt;p&gt;
+```{code-cell} python
+# Import library yang dibutuhkan
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score
 
-<span class="c1"># Mengkodekan variabel kategorikal jika diperlukan</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+# Membaca data dari file CSV
+data = pd.read_csv(&#39;https://raw.githubusercontent.com/Fentryca/Proyek-Sains-Data/main/dataset_tanpa_outlier.csv&#39;)
 
-<span class="c1"># Membagi data menjadi set pelatihan dan pengujian</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+# Memisahkan data menjadi fitur (X) dan target (y)
+X = data.drop(&#39;class&#39;, axis=1)  # Jika targetnya disebut &#39;target&#39;
+y = data[&#39;class&#39;]
 
-<span class="c1"># Membuat dan melatih model Random Forest</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+# Normalisasi data menggunakan MinMaxScaler
+scaler = MinMaxScaler()
+X_scaled = scaler.fit_transform(X)
 
-<span class="c1"># Menghitung feature importance</span>
-<span class="n">importances</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">feature_importances_</span>
+# Membagi data menjadi data pelatihan dan data pengujian
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-<span class="c1"># Membuat DataFrame untuk feature importance</span>
-<span class="n">feature_importance_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;Feature&#39;</span><span class="p">:</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
-    <span class="s1">&#39;Importance&#39;</span><span class="p">:</span> <span class="n">importances</span>
-<span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Importance&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+# Menginisialisasi model KNN
+knn = KNeighborsClassifier(n_neighbors=5)
 
-<span class="c1"># Menampilkan DataFrame feature importance</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">feature_importance_df</span><span class="p">)</span>
+# Melatih model KNN
+knn.fit(X_train, y_train)
 
-<span class="c1"># Menampilkan feature importance dalam bentuk grafik</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">barh</span><span class="p">(</span><span class="n">feature_importance_df</span><span class="p">[</span><span class="s1">&#39;Feature&#39;</span><span class="p">],</span> <span class="n">feature_importance_df</span><span class="p">[</span><span class="s1">&#39;Importance&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Importance&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Feature Importance&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+# Melakukan prediksi dengan data pengujian
+y_pred = knn.predict(X_test)
+
+# Menghitung akurasi model
+accuracy = accuracy_score(y_test, y_pred)
+print(&quot;Akurasi model KNN:&quot;, accuracy)
 </pre></div>
 </div>
-</div>
-</div>
-<p style="text-indent: 50px; text-align: justify;">Dari hasil fitur penting, fitur yang paling berpengaruh terhadap diabetes adalah HbA1c_level dengan nilai 0.400882, menunjukkan kontribusi signifikan dalam memprediksi risiko diabetes. Diikuti oleh blood_glucose_level yang memiliki nilai 0.273806, menandakan bahwa kadar glukosa darah juga berperan besar. Selanjutnya, age dengan nilai 0.131057 menunjukkan bahwa usia merupakan faktor penting, sementara fitur lainnya seperti BMI dan riwayat merokok memiliki pengaruh yang lebih kecil. Ini menunjukkan bahwa kontrol gula darah dan kesehatan metabolik adalah indikator utama risiko diabetes.</p>
-</section>
-<section id="g-testing-data-baru">
-<h2>g. Testing Data Baru<a class="headerlink" href="#g-testing-data-baru" title="Link to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Dataframe yang di-load</span>
-<span class="c1"># data_df adalah dataset yang kamu miliki</span>
-<span class="c1"># Pastikan sudah ada kolom `diabetes` sebagai target</span>
-<span class="c1"># Misalnya: data_df = pd.read_csv(&#39;path_to_file.csv&#39;)</span>
-
-<span class="c1"># Membagi data menjadi fitur dan label</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">data_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;diabetes&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">data_df</span><span class="p">[</span><span class="s1">&#39;diabetes&#39;</span><span class="p">]</span>
-
-<span class="c1"># Mengkodekan variabel kategorikal</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Membagi data menjadi set pelatihan dan pengujian</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
-
-<span class="c1"># Membuat dan melatih model Random Forest</span>
-<span class="n">model</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span>
-    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span>
-    <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>    <span class="c1"># Mencegah overfit</span>
-    <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">3</span>      <span class="c1"># Meningkatkan generalisasi</span>
-<span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
-
-<span class="c1"># Menambahkan satu data baru untuk pengujian</span>
-<span class="n">data_baru</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-    <span class="s1">&#39;gender&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Female&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">],</span>
-    <span class="s1">&#39;hypertension&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-    <span class="s1">&#39;heart_disease&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span>
-    <span class="s1">&#39;smoking_history&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;never&#39;</span><span class="p">],</span>
-    <span class="s1">&#39;bmi&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">26.5</span><span class="p">],</span>
-    <span class="s1">&#39;HbA1c_level&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">],</span>
-    <span class="s1">&#39;blood_glucose_level&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">200</span><span class="p">]</span>
-<span class="p">})</span>
-
-<span class="c1"># Mengkodekan variabel kategorikal pada data baru</span>
-<span class="n">data_baru_encoded</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">data_baru</span><span class="p">,</span> <span class="n">drop_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># Memastikan data baru memiliki kolom yang sama dengan X_train</span>
-<span class="k">for</span> <span class="n">column</span> <span class="ow">in</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-    <span class="k">if</span> <span class="n">column</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data_baru_encoded</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
-        <span class="n">data_baru_encoded</span><span class="p">[</span><span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">data_baru_encoded</span> <span class="o">=</span> <span class="n">data_baru_encoded</span><span class="p">[</span><span class="n">X</span><span class="o">.</span><span class="n">columns</span><span class="p">]</span>  <span class="c1"># Menyusun ulang kolom sesuai dengan X</span>
-
-<span class="c1"># Melakukan prediksi pada data pengujian</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-
-<span class="c1"># Melakukan prediksi probabilitas pada data baru</span>
-<span class="n">y_pred_proba</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">data_baru_encoded</span><span class="p">)</span>
-
-<span class="c1"># Menggunakan ambang batas probabilitas 0.7 untuk memutuskan prediksi</span>
-<span class="n">threshold</span> <span class="o">=</span> <span class="mf">0.7</span>
-<span class="n">y_pred_baru</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_pred_proba</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">threshold</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-
-<span class="c1"># Menghitung akurasi</span>
-<span class="n">accuracy</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Akurasi: </span><span class="si">{</span><span class="n">accuracy</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="c1"># Menampilkan confusion matrix</span>
-<span class="n">conf_matrix</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix:&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">conf_matrix</span><span class="p">)</span>
-
-<span class="c1"># Menampilkan hasil prediksi untuk data baru</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Prediksi untuk data baru: </span><span class="si">{</span><span class="n">y_pred_baru</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> (Probabilitas: </span><span class="si">{</span><span class="n">y_pred_proba</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">)&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Dengan threshold </span><span class="si">{</span><span class="n">threshold</span><span class="si">}</span><span class="s1">, hasil prediksi adalah: </span><span class="si">{</span><span class="n">y_pred_baru</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-
-<span class="c1"># Menampilkan confusion matrix dalam bentuk grafik</span>
-<span class="n">disp</span> <span class="o">=</span> <span class="n">ConfusionMatrixDisplay</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="o">=</span><span class="n">conf_matrix</span><span class="p">,</span> <span class="n">display_labels</span><span class="o">=</span><span class="n">model</span><span class="o">.</span><span class="n">classes_</span><span class="p">)</span>
-<span class="n">disp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Blues</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Confusion Matrix&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p style="text-indent: 50px; text-align: justify;">Model memprediksi data baru termasuk ke dalam kelas 1 karena probabilitasnya melebihi threshold 0.7. Hal ini menunjukkan bahwa model cukup yakin data tersebut milik kelas 1. Akurasi model yang tinggi (95%) mendukung keandalan prediksi ini.</p>
-</section>
-<section id="kesimpulan">
-<h2>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
-<p style="text-indent: 50px; text-align: justify;">kesimpulan metode random forest tersebut sudah baik karena menghasilkan mse yang kecil yaitu 0.048. fitur yg paling berpengaruh yaitu hba1c_level serta blood_glucose_level.</p></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -834,7 +760,7 @@ RMSE rendah (0.315) menunjukkan bahwa tingkat kesalahan prediksi cukup kecil. </
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Prediksi Harga Daging Ayam</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -855,28 +781,45 @@ RMSE rendah (0.315) menunjukkan bahwa tingkat kesalahan prediksi cukup kecil. </
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Prediksi Penyakit Diabetes</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latar-belakang">Latar Belakang</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rumusan-masalah">Rumusan Masalah</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumber-data">Sumber Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-preparation">a. Data Preparation</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-data-wrangling">b. Data Wrangling</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-exploratory-data-anaysis">c. Exploratory Data Anaysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-preprocessing-data">d. Preprocessing Data</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#korelasi-antar-fitur">Korelasi Antar Fitur</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#seleksi-fitur">Seleksi Fitur</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">Tujuan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-data-understanding-memahami-data">a. Data Understanding (Memahami Data)</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#e-modelling">e. Modelling</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#random-forest">random forest</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mengimpor-kelas-localoutlierfactor-dari-modul-neighbors-di-pustaka-scikit-learn-sklearn">Mengimpor kelas LocalOutlierFactor dari modul neighbors di pustaka Scikit-learn (sklearn).</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-dataset-dari-file-csv-dataset-csv-ke-dalam-dataframe-x-menggunakan-pandas">Membaca dataset dari file CSV (“dataset.csv”) ke dalam DataFrame X menggunakan Pandas.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membuat-objek-localoutlierfactor-lof">Membuat objek LocalOutlierFactor (LOF).</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#n-neighbors-5-menentukan-jumlah-tetangga-yang-akan-digunakan-dalam-perhitungan-lof">n_neighbors=5 menentukan jumlah tetangga yang akan digunakan dalam perhitungan LOF.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contamination-0-1-menentukan-tingkat-kontaminasi-atau-persentase-outlier-yang-diharapkan-dalam-data">contamination=0.1 menentukan tingkat kontaminasi atau persentase outlier yang diharapkan dalam data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-metode-fit-predict-dari-objek-lof-untuk-menentukan-status-outlier-outlier-atau-bukan-untuk-setiap-sampel-dalam-data">Menggunakan metode fit_predict() dari objek LOF untuk menentukan status outlier (outlier atau bukan) untuk setiap sampel dalam data.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hasilnya-akan-berupa-array-yang-berisi-prediksi-status-outlier-untuk-setiap-sampel">Hasilnya akan berupa array yang berisi prediksi status outlier untuk setiap sampel.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-indeks-dari-nilai-1-dalam-array-y-pred">Cari indeks dari nilai -1 dalam array y_pred</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cetak-indeks-dari-nilai-1-untuk-mengetahui-data-ke-berapa-yang-dianggap-sebagai-outlier">Cetak indeks dari nilai -1 untuk mengetahui data ke berapa yang dianggap sebagai outlier</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghapus-baris-yang-mengandung-outlier-dari-dataframe">Menghapus baris yang mengandung outlier dari DataFrame</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-dataframe-yang-telah-dibersihkan-ke-file-csv-baru">Menyimpan DataFrame yang telah dibersihkan ke file CSV baru</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-jumlah-baris-asli-dan-jumlah-baris-setelah-outlier-dihapus">Menampilkan jumlah baris asli dan jumlah baris setelah outlier dihapus</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pemodelan">Pemodelan</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-feature-important">f. Feature Important</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#g-testing-data-baru">g. Testing Data Baru</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membaca-data-dari-file-csv">Membaca data dari file CSV</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#memisahkan-data-menjadi-fitur-x-dan-target-y">Memisahkan data menjadi fitur (X) dan target (y)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-data-menggunakan-minmaxscaler">Normalisasi data menggunakan MinMaxScaler</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-scaler-ke-file-pickle">Menyimpan scaler ke file pickle</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#membagi-data-menjadi-data-pelatihan-dan-data-pengujian">Membagi data menjadi data pelatihan dan data pengujian</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-kisaran-nilai-k-yang-ingin-diuji">Menentukan kisaran nilai K yang ingin diuji</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inisialisasi-model-knn">Inisialisasi model KNN</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#inisialisasi-grid-search-cross-validation">Inisialisasi Grid Search Cross-Validation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#melatih-model-menggunakan-grid-search-cross-validation">Melatih model menggunakan Grid Search Cross-Validation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menampilkan-hasil-grid-search">Menampilkan hasil Grid Search</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menggunakan-model-terbaik-untuk-prediksi-pada-data-uji">Menggunakan model terbaik untuk prediksi pada data uji</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-dan-menampilkan-akurasi-model">Menghitung dan menampilkan akurasi model</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#menyimpan-model-yang-sudah-dilatih-ke-file-pickle">Menyimpan model yang sudah dilatih ke file pickle</a></li>
 </ul>
+
   </nav></div>
 
 </div></div>
